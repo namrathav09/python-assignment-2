@@ -1,12 +1,3 @@
-# sentence=input("Enter a string:")
-# print("1.The ORIGINAL string is :",sentence)
-# print("2.The total characters WITH SPACES:",len(sentence))
-# print("3.The total characters WITHOUT SPACES:",len(sentence.replace(" ","")))
-# print("4.The total WORD count:",len(sentence.split(" ")))
-# print("5.The sentence in UPPERCASE:",sentence.upper())
-# print("6.The sentence in LOWERCASE:",sentence.lower())
-# print("7.The sentence in TITLECASE:",sentence.title())
-# print("8.The first word in the sentence:",sentence[0].split(" "))
 sentence=input("Enter a string:")
 
 print("1.The ORIGINAL string is :",sentence)
