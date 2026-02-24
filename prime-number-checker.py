@@ -1,20 +1,25 @@
-def check_prime(number):
 
-    if number <= 1:
-        return False
+def find_prime_numbers(start, end):
 
-    if number == 2:
-        return True
+    print("Prime numbers between", start, "and", end, "are:")
 
-    for i in range(2, number):
-        if number % i == 0:
-            return False
+    for number in range(start, end + 1):
 
-    return True
+        if number <= 1:
+            continue
 
-num = int(input("Enter a number: "))
+        is_prime_number = True
 
-if check_prime(num):
-    print(num, "is a Prime number.")
-else:
-    print(num, "is not a Prime number.")
+        for i in range(2, number):
+            if number % i == 0:
+                is_prime_number = False
+                break
+
+        if is_prime_number:
+            print(number, end=" ")
+
+
+start_range = int(input("Enter the starting number: "))
+end_range = int(input("Enter the ending number: "))
+
+find_prime_numbers(start_range, end_range)
